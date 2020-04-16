@@ -1,0 +1,17 @@
+<%- include('header') -%>
+<h2>Write a new entry</h2>
+<form method="POST" role="form">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" class="form-control" type="text" name="title" placeholder="Entry title" required>
+    </div>
+    <div class="form-group">
+        <label for="body">Entry Text</label>
+        <textarea id="body" class="form-control" name="body"
+            placeholder="Love Express! It's a great tool for building websites." rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Post Entry" class="btn btn-primary">
+    </div>
+</form>
+<%- include('footer')-%>
